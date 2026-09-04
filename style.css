@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
@@ -5,7 +6,6 @@
     --text: #151515;
     --muted: #666;
     --border: #d8d8d2;
-    --accent: #151515;
     --card: #ffffff;
 }
 
@@ -27,18 +27,21 @@ body {
 }
 
 .container {
-    width: min(1100px, calc(100% - 40px));
+    width: min(1080px, calc(100% - 48px));
     margin: auto;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 90vh;
     display: grid;
-    grid-template-columns: 1.5fr 0.8fr;
+    grid-template-columns: 1.35fr 0.75fr;
     align-items: center;
-    gap: 80px;
+    gap: 70px;
     padding: 80px 0;
 }
 
@@ -52,7 +55,7 @@ body {
 
 .hero h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(64px, 10vw, 125px);
+    font-size: clamp(70px, 9vw, 120px);
     line-height: 0.88;
     letter-spacing: -0.07em;
     margin: 25px 0 40px;
@@ -63,7 +66,7 @@ body {
 }
 
 .intro {
-    max-width: 600px;
+    max-width: 620px;
     font-size: 19px;
     color: #444;
 }
@@ -85,7 +88,7 @@ body {
     border-radius: 100px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .button:hover {
@@ -103,26 +106,30 @@ body {
     background: transparent;
 }
 
+
 /* HERO CARD */
 
 .hero-card {
     background: var(--text);
     color: white;
+    width: 100%;
     aspect-ratio: 1;
+    max-width: 350px;
     border-radius: 24px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 20px 20px 0 #d7d7d1;
+    box-shadow: 18px 18px 0 #d7d7d1;
 }
 
 .card-top {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
     align-items: center;
-    font-size: 13px;
+    gap: 8px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
 }
 
 .dot {
@@ -132,17 +139,20 @@ body {
     border-radius: 50%;
 }
 
-.card-icon {
-    font-size: 100px;
-    opacity: 0.9;
+.card-symbol {
+    font-size: 90px;
 }
 
-.hero-card p {
+.card-main {
     font-size: 18px;
+    line-height: 1.35;
     font-weight: 600;
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 .section {
     padding: 120px 0;
@@ -152,7 +162,7 @@ body {
 .section h2,
 .contact h2 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(42px, 6vw, 72px);
+    font-size: clamp(44px, 6vw, 72px);
     line-height: 1;
     letter-spacing: -0.05em;
     margin: 35px 0 60px;
@@ -162,6 +172,11 @@ body {
 .contact h2 span {
     color: #888;
 }
+
+
+/* =========================
+   PROFIL
+========================= */
 
 .profile-grid {
     display: grid;
@@ -175,7 +190,235 @@ body {
     color: #555;
 }
 
-/* EXPERIENCES */
+
+/* =========================
+   AI / SALIENCY
+========================= */
+
+.ai-title {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: end;
+}
+
+.ai-title h2 {
+    margin-bottom: 0;
+}
+
+.ai-title > p {
+    color: #555;
+    font-size: 17px;
+}
+
+
+/* Illustration */
+
+.saliency-demo {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.demo-step {
+    min-width: 0;
+}
+
+.demo-step > span {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #888;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+
+.demo-step h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.demo-step p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #999;
+}
+
+
+/* Fake image */
+
+.fake-image,
+.fake-heatmap,
+.fake-model {
+    height: 210px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    background: #deded8;
+}
+
+.fake-image {
+    background: linear-gradient(
+        145deg,
+        #bcbcb6 0%,
+        #eeeeea 45%,
+        #aaa9a3 100%
+    );
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: #777;
+    clip-path: polygon(
+        0 100%,
+        25% 35%,
+        45% 70%,
+        65% 20%,
+        100% 100%
+    );
+}
+
+.person {
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    font-size: 55px;
+    color: #222;
+}
+
+.sun {
+    position: absolute;
+    right: 18%;
+    top: 15%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #777;
+}
+
+
+/* Model */
+
+.fake-model {
+    background: #151515;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+}
+
+.fake-model span:nth-child(2) {
+    color: #777;
+}
+
+
+/* Heatmap */
+
+.fake-heatmap {
+    background:
+        radial-gradient(
+            circle at 48% 48%,
+            #222 0 7%,
+            transparent 8%
+        ),
+        linear-gradient(
+            135deg,
+            #aaa 0%,
+            #ddd 100%
+        );
+}
+
+.heat {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(18px);
+}
+
+.h1 {
+    width: 90px;
+    height: 90px;
+    left: 32%;
+    top: 32%;
+    background: rgba(40, 40, 40, 0.55);
+}
+
+.h2 {
+    width: 70px;
+    height: 70px;
+    left: 52%;
+    top: 42%;
+    background: rgba(80, 80, 80, 0.45);
+}
+
+.h3 {
+    width: 45px;
+    height: 45px;
+    left: 40%;
+    top: 25%;
+    background: rgba(20, 20, 20, 0.5);
+}
+
+.h4 {
+    width: 80px;
+    height: 80px;
+    left: 65%;
+    top: 20%;
+    background: rgba(100, 100, 100, 0.35);
+}
+
+.h5 {
+    width: 50px;
+    height: 50px;
+    left: 15%;
+    top: 60%;
+    background: rgba(90, 90, 90, 0.3);
+}
+
+
+/* Explanation */
+
+.ai-explanation {
+    margin-top: 70px;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.quote-mark {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 0.7;
+    color: #999;
+}
+
+.ai-explanation p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* =========================
+   EXPERIENCES
+========================= */
 
 .experience {
     border-top: 1px solid var(--border);
@@ -219,7 +462,10 @@ body {
     font-size: 12px;
 }
 
-/* SKILLS */
+
+/* =========================
+   SKILLS
+========================= */
 
 .skills {
     display: grid;
@@ -242,7 +488,10 @@ body {
     color: var(--muted);
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     padding: 140px 0 100px;
@@ -257,18 +506,14 @@ body {
     border-bottom: 2px solid var(--text);
 }
 
-.links {
-    display: flex;
-    gap: 25px;
-    margin-top: 45px;
+.contact-actions {
+    margin-top: 40px;
 }
 
-.links a {
-    color: var(--text);
-    font-weight: 600;
-}
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     border-top: 1px solid var(--border);
@@ -279,36 +524,62 @@ footer {
     font-size: 13px;
 }
 
-/* MOBILE */
 
-@media (max-width: 700px) {
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
 
     .container {
-        width: min(100% - 28px, 1100px);
+        width: min(100% - 28px, 1080px);
     }
 
     .hero {
         min-height: auto;
         grid-template-columns: 1fr;
-        gap: 50px;
-        padding: 70px 0;
+        gap: 55px;
+        padding: 60px 0 80px;
     }
 
     .hero h1 {
-        font-size: 70px;
+        font-size: clamp(60px, 19vw, 82px);
+        margin: 22px 0 30px;
     }
 
     .intro {
         font-size: 17px;
     }
 
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button {
+        text-align: center;
+    }
+
     .hero-card {
-        max-width: 300px;
+        max-width: 100%;
         width: 100%;
+        aspect-ratio: auto;
+        min-height: 230px;
+        box-shadow: 10px 10px 0 #d7d7d1;
+    }
+
+    .card-symbol {
+        font-size: 65px;
     }
 
     .section {
         padding: 80px 0;
+    }
+
+    .section h2,
+    .contact h2 {
+        font-size: clamp(42px, 12vw, 58px);
+        margin: 25px 0 40px;
     }
 
     .profile-grid {
@@ -316,17 +587,87 @@ footer {
         gap: 25px;
     }
 
+    .profile-grid p {
+        font-size: 16px;
+    }
+
+
+    /* AI */
+
+    .ai-title {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .saliency-demo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 50px;
+    }
+
+    .arrow {
+        text-align: center;
+        transform: rotate(90deg);
+    }
+
+    .fake-image,
+    .fake-heatmap,
+    .fake-model {
+        height: 190px;
+    }
+
+    .ai-explanation {
+        margin-top: 50px;
+        padding: 25px;
+    }
+
+    .ai-explanation p {
+        font-size: 16px;
+    }
+
+
+    /* Experience */
+
     .experience article {
         grid-template-columns: 1fr;
         gap: 10px;
+        padding: 32px 0;
     }
+
+    .experience h3 {
+        font-size: 22px;
+    }
+
+
+    /* Skills */
 
     .skills {
         grid-template-columns: 1fr;
     }
 
+    .skill {
+        padding: 25px 0;
+    }
+
+
+    /* Contact */
+
+    .contact {
+        padding: 90px 0 70px;
+    }
+
+    .email {
+        font-size: 20px;
+        word-break: break-word;
+    }
+
+
+    /* Footer */
+
     footer {
         flex-direction: column;
         gap: 8px;
+        padding-bottom: 30px;
     }
 }
+```
