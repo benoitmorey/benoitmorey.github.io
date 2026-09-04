@@ -1,85 +1,85 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Benoît Morey — Ingénieur généraliste Centrale Nantes">
 
     <title>Benoît Morey — Ingénieur Généraliste</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
 <main class="container">
 
-    <!-- HERO -->
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero">
 
-        <div class="hero-text">
+        <p class="eyebrow">
+            INGÉNIEUR GÉNÉRALISTE · CENTRALE NANTES
+        </p>
 
-            <p class="eyebrow">
-                INGÉNIEUR GÉNÉRALISTE · CENTRALE NANTES
-            </p>
+        <h1>
+            Benoît<br>
+            <span>Morey</span>
+        </h1>
 
-            <h1>
-                Benoît<br>
-                <span>Morey</span>
-            </h1>
+        <p class="hero-description">
+            Ingénieur curieux et rigoureux, à l'interface entre
+            <strong>simulation numérique</strong>,
+            <strong>intelligence artificielle</strong>
+            et <strong>systèmes mécaniques</strong>.
+        </p>
 
-            <p class="intro">
-                Ingénieur curieux et rigoureux, à l'interface entre
-                <strong>simulation numérique</strong>,
-                <strong>intelligence artificielle</strong> et
-                <strong>systèmes mécaniques</strong>.
-            </p>
 
-            <div class="actions">
+        <!-- BOUTONS CV -->
 
-                <a href="Morey_Benoit_CV.pdf"
-                   class="button primary"
-                   target="_blank">
-                    📄 Voir mon CV
-                </a>
+        <div class="cv-buttons">
 
-                <a href="Morey_Benoit_CV.pdf"
-                   class="button secondary"
-                   download>
-                    ↓ Télécharger le CV
-                </a>
+            <a
+                href="Morey_Benoit_CV.pdf"
+                class="cv-button cv-primary"
+                target="_blank"
+            >
+                <span>Voir mon CV</span>
+                <span>↗</span>
+            </a>
 
-            </div>
+            <a
+                href="Morey_Benoit_CV.pdf"
+                class="cv-button cv-secondary"
+                download
+            >
+                <span>Télécharger mon CV</span>
+                <span>↓</span>
+            </a>
 
         </div>
 
 
-        <div class="hero-card">
-
-            <div class="card-top">
-                <span>INGÉNIEUR</span>
-                <span class="dot"></span>
-            </div>
-
-            <div class="card-symbol">
-                ⚙
-            </div>
-
-            <div>
-                <p class="card-main">
-                    Conception<br>
-                    Simulation<br>
-                    Intelligence artificielle
-                </p>
-            </div>
-
+        <div class="scroll-indicator">
+            ↓ &nbsp; Découvrir mon parcours
         </div>
 
     </section>
 
 
-    <!-- PROFIL -->
-    <section class="section">
+
+    <!-- =========================
+         PROFIL
+    ========================== -->
+
+    <section class="section profile-section">
 
         <p class="section-label">
             01 — PROFIL
@@ -90,19 +90,21 @@
             <span>pluridisciplinaire.</span>
         </h2>
 
-        <div class="profile-grid">
+
+        <div class="profile-content">
 
             <p>
-                Ma formation à Centrale Nantes m'a permis de développer
-                une solide base en mécanique, propulsion, thermique et
-                aérodynamique, complétée par une spécialisation en
-                informatique pour l'IA.
+                Ma formation à <strong>Centrale Nantes</strong> m'a permis
+                de développer une solide base en mécanique, propulsion,
+                thermique et aérodynamique, complétée par une spécialisation
+                en informatique pour l'IA.
             </p>
 
             <p>
-                Mes expériences m'ont amené à travailler aussi bien sur
-                des problématiques de simulation et de calibration que
-                sur le développement de modèles de deep learning.
+                Mes expériences m'ont amené à travailler sur des
+                problématiques variées, de la simulation et calibration
+                de systèmes mécaniques au développement de modèles
+                de deep learning.
             </p>
 
         </div>
@@ -110,108 +112,127 @@
     </section>
 
 
-    <!-- IA / SALIENCY MAP -->
+
+    <!-- =========================
+         KU LEUVEN / SALIENCY MAP
+    ========================== -->
+
     <section class="section ai-section">
 
         <p class="section-label">
             02 — INTELLIGENCE ARTIFICIELLE
         </p>
 
-        <div class="ai-title">
 
-            <div>
-                <h2>
-                    Comprendre ce que<br>
-                    <span>voit un modèle.</span>
-                </h2>
-            </div>
+        <h2>
+            Comment un modèle<br>
+            <span>regarde une image.</span>
+        </h2>
+
+
+        <div class="ai-introduction">
 
             <p>
-                Lors de mon stage à KU Leuven, j'ai développé un modèle
-                de prédiction de <strong>saliency maps</strong> basé sur
-                DINOv2, des Vision Transformers et des CNNs.
+                Lors de mon stage de recherche à
+                <strong>KU Leuven</strong>, j'ai travaillé sur la
+                prédiction de <em>saliency maps</em> avec le deep learning.
+            </p>
+
+            <p>
+                L'objectif est de prédire les zones d'une image qui
+                attirent le plus l'attention visuelle.
             </p>
 
         </div>
 
 
-        <!-- Illustration -->
-        <div class="saliency-demo">
+        <!-- IMAGES -->
 
-            <div class="demo-step">
+        <div class="saliency-images">
 
-                <div class="fake-image">
-                    <div class="mountain"></div>
-                    <div class="person">●</div>
-                    <div class="sun"></div>
+
+            <div class="image-block">
+
+                <div class="image-label">
+                    <span>01</span>
+                    Image originale
                 </div>
 
-                <span>01</span>
-                <h3>Image</h3>
-                <p>
-                    Une image est donnée au modèle.
-                </p>
-
-            </div>
-
-
-            <div class="arrow">
-                →
-            </div>
-
-
-            <div class="demo-step">
-
-                <div class="fake-model">
-                    <span>ViT</span>
-                    <span>+</span>
-                    <span>CNN</span>
+                <div class="image-wrapper">
+                    <img
+                        src="saliency-input.png"
+                        alt="Image originale utilisée comme entrée du modèle"
+                    >
                 </div>
 
-                <span>02</span>
-                <h3>Modèle IA</h3>
-                <p>
-                    Le modèle analyse les informations visuelles.
-                </p>
-
             </div>
 
 
-            <div class="arrow">
-                →
+            <div class="image-arrow">
+                ↓
             </div>
 
 
-            <div class="demo-step">
+            <div class="image-block">
 
-                <div class="fake-heatmap">
-                    <div class="heat h1"></div>
-                    <div class="heat h2"></div>
-                    <div class="heat h3"></div>
-                    <div class="heat h4"></div>
-                    <div class="heat h5"></div>
+                <div class="image-label">
+                    <span>02</span>
+                    Saliency map prédite
                 </div>
 
-                <span>03</span>
-                <h3>Saliency map</h3>
-                <p>
-                    Les zones importantes pour le modèle sont mises
-                    en évidence.
-                </p>
+                <div class="image-wrapper heatmap">
+                    <img
+                        src="saliency-map.png"
+                        alt="Saliency map prédite par le modèle"
+                    >
+                </div>
 
             </div>
 
         </div>
 
 
-        <div class="ai-explanation">
+        <!-- EXPLICATION -->
 
-            <div class="quote-mark">“</div>
+        <div class="saliency-explanation">
+
+            <div class="explanation-number">
+                ?
+            </div>
+
+            <div>
+
+                <h3>
+                    Qu'est-ce qu'une saliency map ?
+                </h3>
+
+                <p>
+                    C'est une représentation qui permet de visualiser
+                    les zones d'une image auxquelles un modèle accorde
+                    le plus d'importance.
+                </p>
+
+                <div class="tech-tags">
+                    <span>DINOv2</span>
+                    <span>Vision Transformer</span>
+                    <span>CNN</span>
+                    <span>Deep Learning</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-result">
+
+            <span class="result-label">
+                RÉSULTAT
+            </span>
 
             <p>
-                Une <strong>saliency map</strong> permet de visualiser
-                les zones d'une image auxquelles un modèle accorde
-                le plus d'attention.
+                Modèle classé dans le <strong>top 15</strong> sur plusieurs
+                métriques de référence, avec 5 métriques sur 6 concernées.
             </p>
 
         </div>
@@ -219,30 +240,43 @@
     </section>
 
 
-    <!-- EXPERIENCES -->
-    <section class="section">
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+
+    <section class="section experience-section">
 
         <p class="section-label">
             03 — EXPÉRIENCE
         </p>
 
-        <div class="experience">
+        <div class="experience-list">
 
-            <article>
 
-                <div class="experience-date">
+            <!-- KU LEUVEN -->
+
+            <article class="experience-item">
+
+                <div class="experience-year">
                     2025
                 </div>
 
-                <div>
+                <div class="experience-content">
+
                     <h3>
-                        Ingénieur Recherche · KU Leuven
+                        Ingénieur Recherche
                     </h3>
 
-                    <p>
-                        Développement d'un modèle de prédiction de
-                        <em>saliency maps</em> avec le deep learning,
-                        basé sur DINOv2, ViT et CNNs.
+                    <p class="company">
+                        KU Leuven
+                    </p>
+
+                    <p class="experience-description">
+                        Création et développement d'un modèle de prédiction
+                        de saliency maps avec le deep learning.
+                        Architecture encoder-decoder utilisant DINOv2,
+                        des Vision Transformers et des CNNs.
                     </p>
 
                     <div class="tags">
@@ -251,26 +285,34 @@
                         <span>DINOv2</span>
                         <span>CNN</span>
                     </div>
+
                 </div>
 
             </article>
 
 
-            <article>
+            <!-- LHEEA -->
 
-                <div class="experience-date">
+            <article class="experience-item">
+
+                <div class="experience-year">
                     2024
                 </div>
 
-                <div>
+                <div class="experience-content">
+
                     <h3>
-                        Ingénieur Simulation / Calibration · LHEEA
+                        Ingénieur Simulation / Calibration
                     </h3>
 
-                    <p>
-                        Modélisation et calibration d'un injecteur de
-                        carburant pour moteur à combustion interne
-                        avec Amesim.
+                    <p class="company">
+                        LHEEA
+                    </p>
+
+                    <p class="experience-description">
+                        Prise en main et calibration d'un modèle d'injecteur
+                        de carburant pour moteur à combustion interne
+                        sur Amesim, à partir de résultats expérimentaux.
                     </p>
 
                     <div class="tags">
@@ -278,26 +320,34 @@
                         <span>Simulation</span>
                         <span>Calibration</span>
                     </div>
+
                 </div>
 
             </article>
 
 
-            <article>
+            <!-- ZEPLUG -->
 
-                <div class="experience-date">
+            <article class="experience-item">
+
+                <div class="experience-year">
                     2023–24
                 </div>
 
-                <div>
+                <div class="experience-content">
+
                     <h3>
-                        Ingénieur Projets · Zeplug
+                        Ingénieur Projets
                     </h3>
 
-                    <p>
+                    <p class="company">
+                        Zeplug
+                    </p>
+
+                    <p class="experience-description">
                         Déploiement d'infrastructures de recharge pour
                         véhicules électriques en immeubles résidentiels,
-                        jusqu'à 70 projets simultanés.
+                        avec jusqu'à 70 projets simultanément.
                     </p>
 
                     <div class="tags">
@@ -305,6 +355,7 @@
                         <span>Gestion de projet</span>
                         <span>Technique</span>
                     </div>
+
                 </div>
 
             </article>
@@ -314,43 +365,120 @@
     </section>
 
 
-    <!-- COMPETENCES -->
-    <section class="section">
+
+    <!-- =========================
+         COMPETENCES
+    ========================== -->
+
+    <section class="section skills-section">
 
         <p class="section-label">
             04 — COMPÉTENCES
         </p>
 
-        <div class="skills">
 
-            <div class="skill">
-                <h3>Programmation</h3>
-                <p>Python · C++ · Matlab / Simulink</p>
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    01
+                </span>
+
+                <h3>
+                    Programmation
+                </h3>
+
+                <p>
+                    Python · C++ · Matlab / Simulink
+                </p>
+
             </div>
 
-            <div class="skill">
-                <h3>Intelligence artificielle</h3>
-                <p>Machine Learning · Deep Learning · DINOv2</p>
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    02
+                </span>
+
+                <h3>
+                    Intelligence artificielle
+                </h3>
+
+                <p>
+                    Machine Learning · Deep Learning · DINOv2
+                </p>
+
             </div>
 
-            <div class="skill">
-                <h3>Simulation numérique</h3>
-                <p>Amesim · GT-Suite · StarCCM+</p>
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    03
+                </span>
+
+                <h3>
+                    Simulation numérique
+                </h3>
+
+                <p>
+                    Amesim · GT-Suite · StarCCM+
+                </p>
+
             </div>
 
-            <div class="skill">
-                <h3>Data</h3>
-                <p>Pandas · NumPy · SQL</p>
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    04
+                </span>
+
+                <h3>
+                    Data
+                </h3>
+
+                <p>
+                    Pandas · NumPy · SQL
+                </p>
+
             </div>
 
-            <div class="skill">
-                <h3>Conception</h3>
-                <p>SolidWorks</p>
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    05
+                </span>
+
+                <h3>
+                    Conception
+                </h3>
+
+                <p>
+                    SolidWorks
+                </p>
+
             </div>
 
-            <div class="skill">
-                <h3>Langues</h3>
-                <p>Anglais avancé · TOEIC 960/990 · Japonais débutant</p>
+
+            <div class="skill-card">
+
+                <span class="skill-number">
+                    06
+                </span>
+
+                <h3>
+                    Langues
+                </h3>
+
+                <p>
+                    Anglais avancé · TOEIC 960/990 · Japonais débutant
+                </p>
+
             </div>
 
         </div>
@@ -358,11 +486,64 @@
     </section>
 
 
-    <!-- CONTACT -->
-    <section class="contact">
+
+    <!-- =========================
+         FORMATION
+    ========================== -->
+
+    <section class="section education-section">
 
         <p class="section-label">
-            05 — CONTACT
+            05 — FORMATION
+        </p>
+
+        <div class="education">
+
+            <div class="education-year">
+                2021—2025
+            </div>
+
+            <div>
+
+                <h2>
+                    École Centrale<br>
+                    <span>de Nantes</span>
+                </h2>
+
+                <p>
+                    Diplôme d'ingénieur généraliste
+                </p>
+
+                <div class="education-options">
+
+                    <div>
+                        <span>01</span>
+                        Propulsion & Transport
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        Informatique pour l'IA
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact-section">
+
+        <p class="section-label">
+            06 — CONTACT
         </p>
 
         <h2>
@@ -370,17 +551,25 @@
             <span>Parlons-en.</span>
         </h2>
 
-        <a href="mailto:benoit.morey70@gmail.com"
-           class="email">
-            benoit.morey70@gmail.com ↗
+
+        <a
+            href="mailto:benoit.morey70@gmail.com"
+            class="email-link"
+        >
+            benoit.morey70@gmail.com
+            <span>↗</span>
         </a>
 
-        <div class="contact-actions">
 
-            <a href="Morey_Benoit_CV.pdf"
-               class="button primary"
-               download>
-                Télécharger mon CV ↓
+        <div class="contact-cv">
+
+            <a
+                href="Morey_Benoit_CV.pdf"
+                class="cv-button cv-primary"
+                download
+            >
+                Télécharger mon CV
+                <span>↓</span>
             </a>
 
         </div>
@@ -388,20 +577,23 @@
     </section>
 
 
+
+    <!-- FOOTER -->
+
     <footer>
 
         <span>
-            © 2026 Benoît Morey
+            Benoît Morey
         </span>
 
         <span>
-            Centrale Nantes · Ingénieur Généraliste
+            Ingénieur Généraliste · Centrale Nantes
         </span>
 
     </footer>
+
 
 </main>
 
 </body>
 </html>
-```
